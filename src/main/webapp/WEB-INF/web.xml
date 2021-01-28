@@ -1,0 +1,32 @@
+<web-app xmlns="http://java.sun.com/xml/ns/j2ee"
+	xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+	xsi:schemaLocation="http://java.sun.com/xml/ns/j2ee http://java.sun.com/xml/ns/j2ee/web-app_2_4.xsd"
+	version="2.4" id="WebApp_ID">
+	<display-name>Archetype Created Web Application</display-name>
+	<servlet>
+		<servlet-name>AddNoteServlet</servlet-name>
+		<servlet-class>com.miit.servlet.AddNoteServlet</servlet-class>
+	</servlet>
+	<servlet>
+		<servlet-name>DeleteNoteServlet</servlet-name>
+		<servlet-class>com.miit.servlet.DeleteNoteServlet</servlet-class>
+	</servlet>
+	<servlet>
+		<servlet-name>EditNoteServlet</servlet-name>
+		<servlet-class>com.miit.servlet.EditNoteServlet</servlet-class>
+	</servlet>
+
+	<!-- Mapping -->
+	<servlet-mapping>
+		<servlet-name>AddNoteServlet</servlet-name>
+		<url-pattern>/AddNoteServlet</url-pattern>
+	</servlet-mapping>
+	<servlet-mapping>
+		<servlet-name>DeleteNoteServlet</servlet-name>
+		<url-pattern>/DeleteNoteServlet</url-pattern>
+	</servlet-mapping>
+	<servlet-mapping>
+		<servlet-name>EditNoteServlet</servlet-name>
+		<url-pattern>/EditNoteServlet</url-pattern>
+	</servlet-mapping>
+</web-app>
